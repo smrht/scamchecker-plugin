@@ -1,0 +1,19 @@
+{
+  "name": "scamchecker-plugins",
+  "description": "Plugin om verdachte berichten en links met scamchecker.nl te controleren.",
+  "owner": {
+    "name": "scamchecker.nl",
+    "email": "contact@scamchecker.nl"
+  },
+  "plugins": [
+    {
+      "name": "scamchecker",
+      "source": ".",
+      "description": "Laat verdachte berichten en links nakijken door scamchecker.nl.",
+      "version": "1.0.0",
+      "author": {
+        "name": "scamchecker.nl"
+      }
+    }
+  ]
+}

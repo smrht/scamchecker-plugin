@@ -1,0 +1,20 @@
+{
+  "name": "scamchecker",
+  "version": "1.0.0",
+  "description": "Controleer verdachte mails, sms'jes, WhatsApp-berichten, links en screenshots met scamchecker.nl.",
+  "author": {
+    "name": "scamchecker.nl",
+    "email": "contact@scamchecker.nl",
+    "url": "https://scamchecker.nl"
+  },
+  "homepage": "https://scamchecker.nl",
+  "repository": "https://github.com/smrht/scamchecker-plugin",
+  "license": "MIT",
+  "keywords": [
+    "scam",
+    "phishing",
+    "fraude",
+    "veiligheid"
+  ],
+  "mcpServers": "./.mcp.json"
+}

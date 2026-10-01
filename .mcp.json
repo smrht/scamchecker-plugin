@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "scamchecker": {
+      "type": "http",
+      "url": "https://scamchecker.nl/mcp"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/mcpb/main/schemas/mcpb-manifest-v0.4.schema.json",
+  "manifest_version": "0.4",
+  "name": "nl.scamchecker.remote",
+  "display_name": "Scamchecker.nl",
+  "version": "1.0.0",
+  "description": "Controleer verdachte berichten en links via de publieke MCP-server van scamchecker.nl.",
+  "long_description": "Deze Desktop Extension start een kleine lokale brug naar https://scamchecker.nl/mcp. Berichtinhoud wordt niet lokaal opgeslagen.",
+  "author": {
+    "name": "scamchecker.nl",
+    "email": "contact@scamchecker.nl",
+    "url": "https://scamchecker.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smrht/scamchecker"
+  },
+  "homepage": "https://scamchecker.nl",
+  "documentation": "https://github.com/smrht/scamchecker/blob/main/docs/plugins.md",
+  "support": "mailto:contact@scamchecker.nl",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.mjs",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.mjs"],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "check_message",
+      "description": "Controleer een verdachte mail, sms, WhatsApp-bericht, link of screenshot op signalen van oplichting."
+    }
+  ],
+  "compatibility": {
+    "runtimes": {
+      "node": ">=20.0.0"
+    }
+  },
+  "license": "MIT",
+  "keywords": ["scam", "phishing", "fraude"]
+}
